@@ -26,7 +26,7 @@ body {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3.25rem 2rem;
 }
 
 /* ***************** global typography ***************** */
@@ -50,6 +50,13 @@ h4 {
     font-size: var(--h4);
     font-weight: var(--font-weight-bold);
 }
+
+.flex-container .plan p {
+    font-size: 1.5rem;
+    color: var(--header-footer-background);
+    font-weight: var(--font-weight-bold);
+}
+
 /* ***************** header & footer ***************** */
 header,
 footer {
@@ -63,21 +70,37 @@ footer {
     margin-top: 1.75rem;
 }
 
-.flex-container section {
-    background-color: var(--card-colour);
-    padding: 2rem 1.75rem;
-}
-
-.flex-container section {
-    background-color: var(--card-colour);
-    padding: 2rem 1.75rem;
-}
-
 .team .flex-container section {
-    display: flex;
+    background-color: var(--card-colour);
+    padding: 2.5rem 1.75rem;
+    display: flex; /* makes it so the image and text are in separate columns */
     width: calc((100% / 2) - (2rem / 2));
+    align-items: center; /* aligns the content to be in the center of the flexbox */
 }
 
 .flex-container section img {
     padding-right: 3.5rem;
+}
+
+.plans {
+    margin: 6rem 0;
+}
+
+.flex-container section.plan {
+    background-color: var(--card-colour);
+    padding: 1.75rem 1.75rem;
+    width: calc((100% / 3) - (4rem / 3));
+    text-align: center;
+}
+
+.flex-container .plan ul {
+    text-align: left;
+    margin: 0;
+}
+
+.plan {
+    /* streches the distance between the content to be equal to the height of the flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
