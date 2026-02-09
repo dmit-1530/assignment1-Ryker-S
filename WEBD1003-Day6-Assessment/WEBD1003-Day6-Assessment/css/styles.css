@@ -1,4 +1,32 @@
 /* ***************** utilities & containers ***************** */
+:root {
+    --header-footer-background: rgba(12, 74, 110, 1);
+    --card-colour: rgba(195, 195, 196, 1);
+    --text-colour-off-white: rgba(245, 245, 245, 1);
+    --h1: 1.625rem;
+    --h2: 3.75rem;
+    --h3: 3rem;
+    --h4: 2.125rem;
+    --body-text: 1rem;
+    --font-weight-bold: bold;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--body-text);
+    background-color: var(--text-colour-off-white);
+}
+
+.inner-container {
+    max-width: 1528px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+}
 
 /* ***************** global typography ***************** */
 
